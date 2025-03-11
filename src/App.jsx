@@ -3,6 +3,8 @@ import Header from './components/header/Header';
 import HeroSection from './components/heroSection/HeroSection';
 import NumberSection from './components/numbersSection/NumberSection';
 import CompletedDealsSection from './components/completedDealsSection/CompletedDealsSection';
+import AboutCompanySection from './components/aboutCompanySection/AboutCompanySection';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <HeroSection />
       <NumberSection />
       <CompletedDealsSection />
+      <AboutCompanySection />
+      <Footer />
     </div>
   );
 }
