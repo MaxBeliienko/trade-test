@@ -1,0 +1,117 @@
+.number-section-container {
+  position: relative;
+  background-color: var(--color-white);
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.number-section-container::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: 0;
+  width: 120px;
+  height: 30px;
+  background-color: var(--color-primary);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+}
+
+.number-info-wrapper > h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.number-info-wrapper > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.04em;
+  color: #000;
+  opacity: 0.5;
+}
+
+.number-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 32px;
+}
+
+.number-section-list > li {
+  width: 153px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.number-section-list > li > h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-transform: uppercase;
+  color: #000;
+  opacity: 0.8;
+}
+
+.number-section-list > li > p {
+  font-size: 35px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--color-purple);
+  animation: flicker 2s infinite ease-in-out;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .number-section-container {
+    padding: 56px 0;
+    flex-direction: row;
+    gap: 156px;
+  }
+
+  .number-section-container::after {
+    width: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+  }
+
+  .number-info-wrapper > h2 {
+    font-size: 44px;
+    line-height: 127%;
+  }
+
+  .number-section-list > li > p {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .number-section-list {
+    gap: 129px;
+  }
+
+  .number-section-list > li {
+    width: auto;
+  }
+
+  .number-section-list > li > p {
+    font-size: 60px;
+  }
+}
