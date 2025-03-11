@@ -1,0 +1,33 @@
+.deals-section-container {
+  padding: 48px 0;
+}
+
+.deals-section-container > h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.deals-section-container > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.04em;
+  color: #35ff9e;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.deals-section-container > p > span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #35ff9e;
+}
+
+/* Carousel stiles */

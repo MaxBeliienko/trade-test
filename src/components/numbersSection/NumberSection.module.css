@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  overflow: hidden;
 }
 
 .number-section-container::after {
@@ -65,7 +66,7 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--color-purple);
-  animation: flicker 2s infinite ease-in-out;
+  animation: flicker 3s infinite ease-in-out;
 }
 
 @keyframes flicker {
@@ -73,7 +74,7 @@
     opacity: 1;
   }
   50% {
-    opacity: 0.8;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -103,6 +104,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .number-section-container::after {
+    right: -2px;
+  }
+
   .number-section-list {
     gap: 129px;
   }

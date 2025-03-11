@@ -1,0 +1,37 @@
+[
+  {
+    "currencyPair": "NEAR/USDT",
+    "tradeType": "SPOT - 1 день назад",
+    "profit": "58.6206%",
+    "date": "Дата входа 06.10.2023",
+    "target": "Цель 4"
+  },
+  {
+    "currencyPair": "BTC/USDT",
+    "tradeType": "SPOT - 2 дня назад",
+    "profit": "6.82%",
+    "date": "Дата входа 06.10.2023",
+    "target": "Цель 3"
+  },
+  {
+    "currencyPair": "ETH/USDT",
+    "tradeType": "SPOT - 2 дня назад",
+    "profit": "16.3%",
+    "date": "Дата входа 06.10.2023",
+    "target": "Цель 4"
+  },
+  {
+    "currencyPair": "NEAR/USDT",
+    "tradeType": "SPOT - 2 дня назад",
+    "profit": "0.963%",
+    "date": "Дата входа 06.10.2023",
+    "target": "Цель 4"
+  },
+  {
+    "currencyPair": "NEAR/USDT",
+    "tradeType": "SPOT - 1 день назад",
+    "profit": "58.6206%",
+    "date": "Дата входа 06.10.2023",
+    "target": "Цель 4"
+  }
+]
