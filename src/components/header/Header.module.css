@@ -1,0 +1,81 @@
+.header-container {
+  display: flex;
+  padding: 9px 0 0;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-primary);
+}
+
+.logo {
+  width: 107px;
+  height: 52px;
+  object-fit: cover;
+}
+
+.desktop-header-navigation {
+  display: none;
+}
+
+.desktop-log-button-wrapper {
+  display: none;
+}
+
+.burger-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+  .burger-button {
+    display: none;
+  }
+
+  .desktop-header-navigation {
+    display: block;
+  }
+
+  .desktop-header-navigation > ul {
+    display: flex;
+    gap: 32px;
+  }
+
+  .desktop-header-navigation > ul > li {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .desktop-log-button-wrapper {
+    display: flex;
+    gap: 12px;
+  }
+
+  .login-btn {
+    color: var(--color-q);
+    text-transform: uppercase;
+    border: 1.5px solid var(--color-q);
+    border-radius: 3px;
+    padding: 11px 24px;
+    box-shadow: 0 0 4px 0 var(--color-q);
+    background-color: rgba(87, 225, 255, 0.2);
+    cursor: pointer;
+  }
+
+  .registr-btn {
+    text-transform: uppercase;
+    color: #030718;
+    border: 1px solid var(--color-q);
+    border-radius: 3px;
+    padding: 11px 24px;
+    box-shadow: 0 0 4px 0 var(--color-q);
+    background-color: var(--color-q);
+    cursor: pointer;
+  }
+}
