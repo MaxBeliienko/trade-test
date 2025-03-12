@@ -24,7 +24,7 @@ const ReviewsSection = () => {
   };
 
   return (
-    <section className={styles['reviews-section']}>
+    <section className={styles['reviews-section']} id="reviews">
       <h2>Отзывы участников комьюнити</h2>
       <ul className={styles['reviews-list']}>
         {reviewsData.slice(0, visibleReviews).map((review, index) => (

@@ -2,7 +2,7 @@ import styles from './HowUseServiceSection.module.css';
 
 const HowUseServiceSection = () => {
   return (
-    <section className={styles['how-to-use-section']}>
+    <section className={styles['how-to-use-section']} id="how-to-start">
       <h2>Как начать пользоваться сервисом</h2>
       <ul className={styles['how-to-use-list']}>
         <li>
