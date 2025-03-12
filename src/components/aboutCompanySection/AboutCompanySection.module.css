@@ -50,7 +50,7 @@
   padding: 16px;
   position: absolute;
   bottom: -120px;
-  display: none;
+  /* display: none; */
 }
 
 .try-free-wrapper > h3 {
@@ -91,6 +91,11 @@
   border: none;
   text-transform: uppercase;
   color: var(--color-primary);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.try-free-wrapper > form > button:hover {
+  background-color: var(--color-hover);
 }
 
 @media screen and (min-width: 768px) {
@@ -122,6 +127,7 @@
   .try-free-wrapper {
     position: static;
     padding: 32px 64px;
+    max-width: 630px;
   }
 
   .try-free-wrapper > h3 {
