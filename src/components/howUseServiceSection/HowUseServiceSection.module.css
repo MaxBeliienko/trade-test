@@ -110,6 +110,7 @@
   .how-to-use-section::after {
     width: 50%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    right: -2px;
   }
 
   .how-to-use-list {
