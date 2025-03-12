@@ -4,6 +4,7 @@ import HeroSection from './components/heroSection/HeroSection';
 import NumberSection from './components/numbersSection/NumberSection';
 import CompletedDealsSection from './components/completedDealsSection/CompletedDealsSection';
 import AboutCompanySection from './components/aboutCompanySection/AboutCompanySection';
+import PricesSection from './components/pricesSection/PricesSection';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <NumberSection />
       <CompletedDealsSection />
       <AboutCompanySection />
+      <PricesSection />
       <Footer />
     </div>
   );
