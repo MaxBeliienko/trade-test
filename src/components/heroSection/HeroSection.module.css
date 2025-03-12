@@ -1,5 +1,5 @@
 .hero-section {
-  padding: 40px 0;
+  padding: 40px 16px;
   display: flex;
   flex-direction: column;
   gap: 33px;
@@ -62,6 +62,12 @@
   padding: 11px 24px;
   box-shadow: 0 0 4px 0 var(--color-q);
   background: var(--color-q);
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.form-button:hover {
+  background-color: rgba(87, 225, 255, 0.2);
+  color: var(--color-q);
 }
 
 .hero-info-container > span {
@@ -154,7 +160,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    padding-top: 70px;
+    padding: 70px 36px 40px;
     display: flex;
     flex-direction: row-reverse;
     gap: 15px;
@@ -169,6 +175,7 @@
 @media screen and (min-width: 1440px) {
   .hero-section {
     padding-top: 160px;
+    padding: 160px 80px 40px;
     display: flex;
     flex-direction: row-reverse;
     gap: 128px;

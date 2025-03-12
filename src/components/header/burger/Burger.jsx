@@ -9,7 +9,7 @@ const Burger = ({ closeBurger }) => {
   };
 
   return (
-    <div className={styles['burger-wrapper']}>
+    <>
       <button className={styles['close-btn']} onClick={closeBurger}>
         <img
           src={closeBtn}
@@ -33,7 +33,7 @@ const Burger = ({ closeBurger }) => {
         <button className={styles['registr-btn']}>регистрация</button>
         <button className={styles['login-btn']}>Войти</button>
       </div>
-    </div>
+    </>
   );
 };
 

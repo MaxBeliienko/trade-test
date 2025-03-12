@@ -1,5 +1,5 @@
 .faq-section {
-  padding: 56px 0 40px;
+  padding: 56px 16px 40px;
   background-color: var(--color-white);
 }
 
@@ -64,7 +64,7 @@
 
 @media screen and (min-width: 768px) {
   .faq-section {
-    padding: 68px 40px 45px;
+    padding: 68px 36px 45px;
   }
 
   .faq-section > h2 {
@@ -74,7 +74,7 @@
 
 @media screen and (min-width: 1440px) {
   .faq-section {
-    padding: 96px 220px 45px;
+    padding: 96px 297px 45px;
   }
 
   .faq-section > h2 {

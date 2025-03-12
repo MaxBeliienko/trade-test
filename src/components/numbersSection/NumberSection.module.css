@@ -1,7 +1,7 @@
 .number-section-container {
   position: relative;
   background-color: var(--color-white);
-  padding: 48px 0;
+  padding: 48px 16px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -82,7 +82,7 @@
 
 @media screen and (min-width: 768px) {
   .number-section-container {
-    padding: 56px 0;
+    padding: 56px 36px;
     flex-direction: row;
     gap: 156px;
   }
@@ -103,12 +103,16 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .number-section-container {
+    padding: 56px 80px;
+  }
+
   .number-section-container::after {
     right: -2px;
   }
 
   .number-section-list {
-    gap: 129px;
+    gap: 120px;
   }
 
   .number-section-list > li {

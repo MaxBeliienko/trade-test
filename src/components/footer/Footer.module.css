@@ -1,7 +1,7 @@
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding: 40px 0 20px;
+  padding: 40px 16px 20px;
 }
 
 .footer-nav-wrapper {
@@ -66,6 +66,7 @@
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
+    padding: 40px 36px 20px;
   }
 
   .footer-nav-wrapper {
@@ -87,10 +88,15 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .footer-container {
+    padding: 40px 80px 20px;
+    gap: 10px;
+  }
+
   .footer-nav-wrapper {
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 217px;
+    padding-right: 200px;
   }
 
   .footer-nav-list {

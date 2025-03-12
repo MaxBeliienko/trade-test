@@ -1,0 +1,72 @@
+.trade-blade-section {
+  padding: 171px 16px 71px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.trade-blade-section > h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.trade-blade-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.trade-blade-list > li {
+  display: flex;
+  align-items: start;
+  gap: 32px;
+}
+
+.trade-blade-list > li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trade-blade-list > li > div > h3 {
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.04em;
+  font-weight: 500;
+}
+
+.trade-blade-list > li > div > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 121%;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  .trade-blade-section {
+    padding: 171px 36px 71px;
+  }
+
+  .trade-blade-section > h2 {
+    font-size: 34px;
+  }
+
+  .trade-blade-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .trade-blade-section {
+    padding: 96px 80px;
+    flex-direction: row;
+    gap: 121px;
+  }
+
+  .trade-blade-section > h2 {
+    font-size: 44px;
+  }
+}

@@ -1,5 +1,5 @@
 .deals-section-container {
-  padding: 48px 0;
+  padding: 48px 16px;
 }
 
 .deals-section-container > h2 {
@@ -30,4 +30,14 @@
   background-color: #35ff9e;
 }
 
-/* Carousel stiles */
+@media screen and (min-width: 768px) {
+  .deals-section-container {
+    padding: 48px 36px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .deals-section-container {
+    padding: 48px 80px;
+  }
+}

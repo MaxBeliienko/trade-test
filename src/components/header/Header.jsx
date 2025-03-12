@@ -1,5 +1,5 @@
 import styles from './Header.module.css';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import logo from '../../assets/logo.png';
 import burgerIcon from '../../assets/burger-icon.png';
 import Burger from './burger/Burger';
@@ -7,9 +7,22 @@ import { scrollToSection } from '../../utils/scrollToSection';
 
 const Header = () => {
   const [showBurger, setShowBurger] = useState(false);
+  const burgerRef = useRef(null);
   const handleShowBurger = () => {
     setShowBurger(!showBurger);
   };
+
+  useEffect(() => {
+    if (burgerRef.current) {
+      if (showBurger) {
+        burgerRef.current.style.transform = 'scale(1)';
+        burgerRef.current.style.opacity = '1';
+      } else {
+        burgerRef.current.style.transform = 'scale(0.5)';
+        burgerRef.current.style.opacity = '0';
+      }
+    }
+  }, [showBurger]);
 
   return (
     <header className={styles['header-container']}>
@@ -32,7 +45,14 @@ const Header = () => {
       <button onClick={handleShowBurger} className={styles['burger-button']}>
         <img src={burgerIcon} alt="burger-icon" />
       </button>
-      {showBurger && <Burger closeBurger={handleShowBurger} />}
+      <div
+        ref={burgerRef}
+        className={`${styles['display-none']} ${styles['burger-wrapper']} ${
+          showBurger ? styles['burger-open'] : ''
+        }`}
+      >
+        {showBurger && <Burger closeBurger={handleShowBurger} />}
+      </div>
     </header>
   );
 };

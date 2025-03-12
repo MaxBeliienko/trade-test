@@ -1,0 +1,111 @@
+.reviews-section {
+  padding: 66px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-section > h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.review-item {
+  background-color: rgba(234, 239, 240, 0.2);
+  padding: 24px 16px;
+  border-radius: 4px;
+  display: flex;
+  gap: 5px;
+}
+
+.review-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+}
+
+.review-header > h3 {
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.04em;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: #a5aebc;
+}
+
+.avatar {
+  width: 81px;
+  height: 105px;
+}
+
+.review-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  opacity: 0.8;
+}
+
+.load-more-button {
+  border: 2px solid var(--color-q);
+  border-radius: 3px;
+  padding: 16px 24px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: var(--color-q);
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.load-more-button:hover {
+  background-color: var(--color-q);
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-section {
+    padding: 66px 36px;
+  }
+
+  .reviews-section > h2 {
+    font-size: 34px;
+    width: 100%;
+  }
+
+  .reviews-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews-section {
+    padding: 66px 188px;
+  }
+
+  .reviews-section > h2 {
+    font-size: 44px;
+  }
+
+  .reviews-list {
+    margin-bottom: 72px;
+  }
+}
