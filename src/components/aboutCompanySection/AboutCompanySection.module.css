@@ -44,6 +44,7 @@
 }
 
 .try-free-wrapper {
+  max-width: 340px;
   border-radius: 4px;
   background-color: var(--color-purple);
   padding: 16px;
